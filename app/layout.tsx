@@ -24,6 +24,7 @@ export default async function RootLayout({
 }) {
   const userSongs = await getSongsByUserId();
 
+  // throw new Error('test');
 
   return (
     <html lang='en'>
