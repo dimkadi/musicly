@@ -61,3 +61,13 @@ export interface Subscription {
   trial_end?: string;
   prices?: Price;
 }
+
+
+export interface ProductWithPrice extends Product {
+  prices?: Price[];
+}
+
+export interface Customer {
+  id: string;
+  stripe_customer_id?: string;
+}
